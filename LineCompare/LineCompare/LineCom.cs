@@ -29,6 +29,19 @@ namespace LineCompare
             bool checkY = Math.Equals(y2 - y1, lengthOfLine);
             Console.WriteLine(checkX);
             Console.WriteLine(checkY);
+
+            if (x1 > x2 && y1 > y2)
+            {
+                Console.WriteLine("X1 and Y1 is greater than X1 and Y2");
+            }
+            else if (x2 > x1 && y2 > y1)
+            {
+                Console.WriteLine("X2 And Y2 is greater than X1 and X2");
+            }
+            else
+            {
+                Console.WriteLine("Both Are Equal");
+            }
         }
 
     }
